@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Verdana,sans-serif;
+            font-size: 0.9em;
+        }
+
+        div#header, div#footer {
+            padding: 10px;
+            color: white;
+            background-color: black;
+        }
+
+        div#content {
+            margin: 5px;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        div.information {
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        div#menu ul {
+            padding: 0;
+        }
+
+        div#menu ul li {
+            display: inline;
+            margin: 5px;
+        }
+        * {box-sizing: border-box;}
+        ul {list-style-type: none;}
+        body {font-family: Verdana, sans-serif;}
+
+        .month {
+            padding: 70px 25px;
+            width: 100%;
+            background: #1abc9c;
+            text-align: center;
+        }
+
+        .month ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .month ul li {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .month .prev {
+            float: left;
+            padding-top: 10px;
+        }
+
+        .month .next {
+            float: right;
+            padding-top: 10px;
+        }
+
+        .weekdays {
+            margin: 0;
+            padding: 10px 0;
+            background-color: #ddd;
+        }
+
+        .weekdays li {
+            display: inline-block;
+            width: 13.6%;
+            color: #666;
+            text-align: center;
+        }
+
+        .days {
+            padding: 10px 0;
+            background: #eee;
+            margin: 0;
+        }
+
+        .days li {
+            list-style-type: none;
+            display: inline-block;
+            width: 13.6%;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size:12px;
+            color: #777;
+        }
+
+        .days li .active {
+            padding: 5px;
+            background: #1abc9c;
+            color: white !important
+        }
+
+        @media screen and (max-width:720px) {
+            .weekdays li, .days li {width: 13.1%;}
+        }
+
+        @media screen and (max-width: 420px) {
+            .weekdays li, .days li {width: 12.5%;}
+            .days li .active {padding: 2px;}
+        }
+
+        @media screen and (max-width: 290px) {
+            .weekdays li, .days li {width: 12.2%;}
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+            background: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <h1>Welcom to Booking room system</h1>
+</div>
+<legend></legend>
+<div id="menu">
+    <ul>
+        <li> <a href="http://localhost:63342/BookingRoom/NewBookingAdmin.html?_ijt=h85217k8uoa1ecihq4k0p8sjp8">Add New Booking</li></a>
+        <li> <a href="http://localhost:63342/BookingRoom/CustomerInformation.html?_ijt=h85217k8uoa1ecihq4k0p8sjp8">Customer Information</li></a>
+        <li> <a href="http://localhost:63342/BookingRoom/BoomingManagement.html?_ijt=92h16f9qlclhq7q0vkkeo8rqnq">Booking Mangement</li></a>
+    </ul>
+</div>
+
+</div>
+</div>
+<divclass="container">
+    <div id="content">
+        <div>
+            <p><img src="images/city.jpg" width="580" height="300" alt="" /></p>
+            <h4>View Bookin :</h4>
+            <table align="center">
+                <tr>
+                    <td> Date</td>
+                    <td> Time </td>
+                    <td> Room </td>
+                    <td> Group </td>
+                    <td> Note </td>
+                </tr>
+                <tr>
+                    <td> 2-4-2018 </td>
+                    <td> 01:30 pm </td>
+                    <td> 1. Church </td>
+                    <td> University </td>
+                    <td>  </td>
+                </tr>
+                <tr>
+                    <td> 4-5-2018 </td>
+                    <td> 03:00 pm </td>
+                    <td> 2. Hall </td>
+                    <td> Cook </td>
+                    <td>  </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <div >
+                <h4>Calender:</h4>
+                <section>
+                    <div class="month">
+                        <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li>
+                                August<br>
+                                <span style="font-size:18px">2017</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                    </ul>
+
+                    <ul class="days">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li><span class="active">10</span></li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
+
+
+                </section>
+            </div>
+
+        </div>
+    </div>
+    <div id="sidebar">
+        <div id="sbox1">
+            <h2></h2>
+
+        </div>
+
+    </div>
+</div>
+<div id="footer" class="container">
+</div>
+</body>
+</html>
+

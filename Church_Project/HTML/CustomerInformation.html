@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<!-- <?php
+//Step1
+ $db = mysqli_connect('localhost','username','password','database_name')
+ or die('Error connecting to MySQL server.');
+?> -->
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers Information</title>
+    <style>
+        body {
+            font-family: Verdana,sans-serif;
+            font-size: 0.9em;
+        }
+
+        div#header, div#footer {
+            padding: 10px;
+            color: white;
+            background-color: black;
+        }
+
+        div#content {
+            margin: 5px;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        div.information {
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        div#menu ul {
+            padding: 0;
+        }
+
+        div#menu ul li {
+            display: inline;
+            margin: 5px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            margin=10px;
+        }
+        form.example button {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+        }
+        form.example button:hover {
+            background: #0b7dda;
+        }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        font-family: Arial;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 80%;
+            background: #f1f1f1;
+        }
+        input.right{
+            text-align:right;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="header">
+    <h1>Customers Information</h1>
+</div>
+
+<div id="menu">
+    <ul>
+        <li> <a href="http://localhost:63342/BookingRoom/NewBookingAdmin.html?_ijt=h85217k8uoa1ecihq4k0p8sjp8">Add New Booking</li></a>
+        <li> <a href="http://localhost:63342/BookingRoom/CustomerInformation.html?_ijt=h85217k8uoa1ecihq4k0p8sjp8">Customer Information</li></a>
+        <li> <a href="http://localhost:63342/BookingRoom/BoomingManagement.html?_ijt=92h16f9qlclhq7q0vkkeo8rqnq">Booking Mangement</li></a>
+    </ul>
+</div>
+
+<div id="content">
+    <form action="/action_page.php" method="get">
+        <fieldset>
+            <legend>Customer information:</legend>
+            <div class="information">
+
+
+                <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                    <input type="text" placeholder="Search.." name="search2">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+
+
+
+                <table id="information" class="display" width="100%" cellpadding="10">
+                    <thead>
+                    <tr>
+                        <th>Group</th>
+                        <th>Agent</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <th>Group</th>
+                        <th>Agent</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                    </thead>
+                    </tr>
+                    </tfoot>
+                    <tbody>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                    </tr>
+                    <tr>
+                        <td>Donna Snider</td>
+                        <td>Customer Support</td>
+                        <td>New York</td>
+                        <td>25</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--<input type="submit" value="Print" >-->
+                <div align="center">
+                <button onclick="myFunction()">Print this page</button>
+                </div>
+                <script>
+                    function myFunction() {
+                        window.print();
+                    }
+                </script>
+
+
+</body>
+</html>
+

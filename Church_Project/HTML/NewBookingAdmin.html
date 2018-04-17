@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Booking</title>
+    <style>
+        body {
+            font-family: Verdana,sans-serif;
+            font-size: 0.9em;
+        }
+
+        div#header, div#footer {
+            padding: 10px;
+            color: white;
+            background-color: black;
+        }
+
+        div#content {
+            margin: 5px;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        div.information {
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        div#menu ul {
+            padding: 0;
+        }
+
+        div#menu ul li {
+            display: inline;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <h1>New Booking</h1>
+</div>
+
+<div id="menu">
+    <a href="http://localhost:63342/BookingRoom/NewBookingAdmin.html?_ijt=h85217k8uoa1ecihq4k0p8sjp8">Add New Booking</a>
+    <a href="http://localhost:63342/BookingRoom/CustomerInformation.html?_ijt=h85217k8uoa1ecihq4k0p8sjp8">Customer Information</a>
+    <a href="http://localhost:63342/BookingRoom/BoomingManagement.html?_ijt=92h16f9qlclhq7q0vkkeo8rqnq">Booking Management</a>
+</div>
+
+<div id="content">
+    <form action="/action_page.php" method="post">
+        <fieldset>
+            <legend>Personal information:</legend>
+            <div class="information">
+                <table align="center">
+                    <tr>
+                        <td> Title: </td>
+                        <td> <select name="title" required>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Ms">Ms</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td> Name: </td>
+                        <td><input type="text" name="name" required > </td>
+                    </tr>
+                    <tr>
+                        <td> Gender: </td>
+                        <td><input type="radio" name="gender" value="male" checked> Male
+                            <input type="radio" name="gender" value="female"> Female
+                            <input type="radio" name="gender" value="other"> Other </td>
+                    </tr>
+                    <tr>
+                        <td> Phone Number: </td>
+                        <td> <input type="text" name="phone" > </td>
+                    </tr>
+                    <tr>
+                        <td> Email</td>
+                        <td> <input type="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td> Address: </td>
+                        <td> <input type="text" name="address" ></td>
+                    </tr>
+                    <tr>
+                        <td>  Room Type: </td>
+                        <td> <select required>
+                            <option value="0">1. Church </option>
+                            <option value="1">2. Hall </option>
+                            <option value="2">3. Garden Room </option>
+                            <option value="4">4. Kitchen </option>
+                            <option value="1">5. Outdoor children's play area </option>
+                            <option value="2">6. Committee Room</option>
+                            <option value="4">7. Elders' Room </option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Date: </td>
+                        <td> <input type="date" name="date" required></td>
+                    </tr>
+                    <tr>
+                        <td> Time:</td>
+                        <td> <input type="time" name="time" required></td>
+                    </tr>
+                    <tr>
+                        <td> Other Requirements: </td>
+                        <td> <textarea name="message" rows="10" cols="30"> </textarea></td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="agree" required > I Agree All<a href="http://localhost:63342/BookingRoom/Terms.html?_ijt=90m2t8a25sn1bb8l9c0i21bkut"> Terms </a>
+                    </td>
+                    </tr>
+                    <tr></tr>
+                    <tr><td></td>
+                        <td><input type="submit" value="Confirm">
+                        <input type="submit" value="Cancel"></td>
+                    </tr>
+                </table>
+        </fieldset>
+    </form>
+</div>
+</div>
+</body>
+</html>
+
